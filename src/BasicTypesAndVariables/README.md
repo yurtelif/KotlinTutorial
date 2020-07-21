@@ -48,3 +48,21 @@ var age: Int = 15
 
 In kotlin numbers are not primitives, they are objects so variables holds a reference to the object. Also char is not primitives as numbers, Chars in Kotlin are characters.
 
+# Arrays 
+
+```kotlin
+var array = arrayOf(1, 2, 3)
+print(array[0])
+var arraySize = array.size
+```
+
+You can declare array type
+```kotlin
+var byteArray: Array<Byte> = arrayOf(1, 2, 3)
+```
+
+> String template
+```kotlin
+var x = 42 
+var value = "Value of x is $x"
+```
