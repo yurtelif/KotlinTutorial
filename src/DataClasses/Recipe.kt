@@ -1,7 +1,34 @@
 package DataClasses
 
-data class Recipe(val title: String, val isVetegerian: Boolean)
+data class Recipe(val title: String, val mainIngredient: String, val isVetegerian: Boolean = false, val difficulty: String = "Easy")
 
+class Mushroom(val size: Int, val isMagic: Boolean) {
+
+    constructor(isMagic_param: Boolean) : this(0, isMagic_param) {
+        //code that runs when the secondary constructor is called
+    }
+
+}
+
+fun findRecipes(title: String = "",
+                ingredient: String = "",
+                isVetegerian: Boolean = false,
+                difficulty: String = "") : Array<Recipe> {
+    // code to find recipes
+    return arrayOf(Recipe(title, ingredient, isVetegerian, difficulty))
+}
+
+// obarloading examples
+
+fun addNumbers(a: Int, b: Int) : Int{
+    return a+b
+}
+
+fun addNumbers(a: Double, b: Double) : Double{
+    return a+b
+}
+
+/*
 fun main() {
     val r1 = Recipe("Thai Curry", false)
     val r2 = Recipe("Thai Curry", false)
@@ -16,3 +43,5 @@ fun main() {
     println("title is ${title} and vegeterain is ${vegeterian}")
 
 }
+ */
+
