@@ -1,4 +1,4 @@
-package NullsAndExceptions
+package NullsAndExceptions.exception
 
 import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
