@@ -1,7 +1,7 @@
 package Generics
 
 
-class Contest<T: Pet> {
+class Contest<T: Pet>(var vet: Vet<in T>) {
 
     val scores: MutableMap<T, Int> = mutableMapOf()
 
